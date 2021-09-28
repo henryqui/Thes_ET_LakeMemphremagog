@@ -1,0 +1,13 @@
+This text file provides details about the different result tables presented for the present experiment:
+
+THES-exp1_results_lake_PET and THES-exp1_results_marsh_PET are data files containing data tables following the same structure for the lake and marsh.
+
+Hence, below is a summary of descriptions of the data tables presented in each data file:
+
+All first level variables have 10 columns, corresponding to the 10 different scenarios (0.5h, 1h, 3h, 6h, 12h, 24h, 3day, 7day, 14day, 1mo)
+
+1. exp11_ET_res_lake[or marsh] contains the modelled PET for all equations, with rows as different timestamps and columns as different equations at the selected time scale.
+2. exp11_gof_res_lake[or marsh] contains the goodness of fit (GoF) measures for all equations, where the 40 rows correspond to different equations and the 10 columns correspond to different GoFs {'pearson';'pval';'rmse';'bic';'mae';'me';'stdE';'pbias';'ns';'d'}, of which only rmse, mae, me and d are used in the non-dominated sorting
+3. exp11_indic_lake[or marsh] contains the indicator variables (SMRD and NSE), where the 4 rows correspond to [SMRD, mean NSE,min NSE, max NSE], and 10 columns correspond to different scenarios
+4. exp11_rank1idx_lake[or marsh] contains the equation number corresponding to each rank 1 equation, with one row, and 10 columns corresponding to the different scenarios; model numbers follow the same order as exp11_ET_res_lake[or marsh]'s columns
+5. exp11_ranknds_lake[or marsh] contains the rank of each equation, with 40 rows corresponding to the different equations (40) in the same order as exp11_rank1idx_lake[or marsh] and exp11_ET_res_lake[or marsh], and different columns (10) corresponding to each scenario.

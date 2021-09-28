@@ -1,0 +1,17 @@
+This text file provides details about the measured ET
+
+THES-ET_post_lake and THES-ET_post_marsh are data files containing data tables following the same structure for the lake and marsh.
+
+Hence, below is a summary of descriptions of the data tables presented in each data file:
+
+1. ECData: All the 30-min data from the measurements with Campbell Scientific's instrumentation and EddyPro's results - this table summarizes all raw data required for calculations in the ET paper. 
+
+Rows display different timestamps at 30-min intervals, while rows display different variables. The description of variable names is standard and provided in the two attached pdf documents: Section 3 of the EddyPro manual and Section 4 of the Campbell Scientific manual.
+Note that the evapotranspiration measurements contained in this file are calculated by the automatic EasyFlux Campbell Scientific routine and is not the final result. See below for final results.
+
+2. ET: Final ET fluxes at a half-hourly interval at the same timestamps as ECData
+3. H: Final H fluxes at a half-hourly interval at the same timestamps as ECData
+4. LE: Final LE fluxes at a half-hourly interval at the same timestamps as ECData
+
+
+
